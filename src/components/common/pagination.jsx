@@ -1,5 +1,6 @@
 import React from "react";
 import _ from "lodash";
+import PropTypes from "prop-types";
 
 const Pgination = (props) => {
   const { itemsCount, pageSize, onPageChange, currentPage } = props;
@@ -25,6 +26,13 @@ const Pgination = (props) => {
       </ul>
     </nav>
   );
+};
+
+Pgination.propTypes = {
+  itemsCount: PropTypes.number.isRequired,
+  pageSize: PropTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  onPageChange: PropTypes.func.isRequired,
 };
 
 export default Pgination;
