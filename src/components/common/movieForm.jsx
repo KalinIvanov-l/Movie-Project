@@ -28,7 +28,7 @@ class MovieForm extends Form {
       .required()
       .min()
       .max(10)
-      .label("Dayli Rental Rate"),
+      .label("Daily Rental Rate"),
   };
 
   componentDidMount() {
